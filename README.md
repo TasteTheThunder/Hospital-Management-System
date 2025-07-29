@@ -49,42 +49,42 @@
 ## Screenshots
 
 ### Login Page
-![Login](Screenshots/Login.PNG)
+![Login](Screenshots/Login.png)
 
 ### Welcome Page
-![Welcome](Screenshots/welcome.PNG)
+![Welcome](Screenshots/Welcome.png)
 
 ## Patient Management
 ### Patient Main Page
-![Patient Main](Screenshots/Patient.PNG)
+![Patient Main](Screenshots/Patient.png)
 
 ### Admit Patient
-![Admit Patient](Screenshots/AdmitPatient.PNG)
+![Admit Patient](Screenshots/AdmitPatient.png)
 
 ### Edit Patient
-![Edit Patient](Screenshots/editPatient.PNG)
+![Edit Patient](Screenshots/EditPatient.png)
 
 ### Discharge Patient
-![Discharge Patient](Screenshots/dischargePatient.PNG)
+![Discharge Patient](Screenshots/DischargePatient.png)
 
 ### Patient Record
 ![Patient Record](Screenshots/PatientRecord.png)
 
 ## Doctor Management
 ### Doctor Main Page
-![Doctor Main](Screenshots/Doctor.PNG)
+![Doctor Main](Screenshots/Doctor.png)
 
 ### Add Doctor
-![Add Doctor](Screenshots/addDoctor.PNG)
+![Add Doctor](Screenshots/AddDoctor.png)
 
 ### Edit Doctor
-![Edit Doctor](Screenshots/editDoctor.PNG)
+![Edit Doctor](Screenshots/EditDoctor.png)
 
 ### Fire Doctor
-![Fire Doctor](Screenshots/fireDoctor.PNG)
+![Fire Doctor](Screenshots/FireDoctor.png)
 
 ### Doctor Details
-![Doctor Details](Screenshots/DoctorDetails.PNG)
+![Doctor Details](Screenshots/DoctorDetails.png)
 ## Folder Structure
 
 ```
