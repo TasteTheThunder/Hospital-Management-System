@@ -14,22 +14,22 @@ public class addDoctor extends javax.swing.JFrame {
 
     public addDoctor() {
         initComponents();
-        this.getContentPane().setBackground(new Color(0, 153, 153));
-       // Center the frame 
+        this.getContentPane().setBackground(new Color(90, 90, 90));
+        // Center the frame
         this.setLocationRelativeTo(null);
-        // do not resize 
+        // do not resize
         this.setResizable(false);
-        
-       jButton1.setCursor(new Cursor(Cursor.HAND_CURSOR));
-       jButton2.setCursor(new Cursor(Cursor.HAND_CURSOR));
-       jButton3.setCursor(new Cursor(Cursor.HAND_CURSOR));
-         // Joptionpane styling
-         UIManager.put("OptionPane.background", new ColorUIResource(new Color(0, 128, 128))); // Surgical green
+
+        jButton1.setCursor(new Cursor(Cursor.HAND_CURSOR));
+        jButton2.setCursor(new Cursor(Cursor.HAND_CURSOR));
+        jButton3.setCursor(new Cursor(Cursor.HAND_CURSOR));
+        // Joptionpane styling
+        UIManager.put("OptionPane.background", new ColorUIResource(new Color(0, 128, 128))); // Surgical green
         UIManager.put("Panel.background", new ColorUIResource(new Color(0, 128, 128)));
-        
+
         // Set the text color to white
         UIManager.put("OptionPane.messageForeground", new ColorUIResource(Color.WHITE));
-        
+
         // Customize the "OK" button
         UIManager.put("Button.background", new ColorUIResource(Color.BLACK));
         UIManager.put("Button.foreground", new ColorUIResource(Color.RED));
@@ -56,6 +56,7 @@ public class addDoctor extends javax.swing.JFrame {
 
         jLabel1.setFont(new java.awt.Font("Times New Roman", 1, 24)); // NOI18N
         jLabel1.setText("ADD DOCTOR DETAILS");
+        jLabel1.setForeground(new java.awt.Color(255, 255, 255));
 
         jLabel2.setFont(new java.awt.Font("Cambria", 0, 14)); // NOI18N
         jLabel2.setForeground(new java.awt.Color(255, 255, 255));
@@ -65,7 +66,7 @@ public class addDoctor extends javax.swing.JFrame {
         jLabel4.setForeground(new java.awt.Color(255, 255, 255));
         jLabel4.setText("Doctor Specilization:");
 
-        jButton1.setBackground(new java.awt.Color(51, 255, 153));
+        jButton1.setBackground(new java.awt.Color(54, 54, 54));
         jButton1.setFont(new java.awt.Font("Cambria", 1, 14)); // NOI18N
         jButton1.setForeground(new java.awt.Color(255, 255, 255));
         jButton1.setText("ADD");
@@ -75,7 +76,7 @@ public class addDoctor extends javax.swing.JFrame {
             }
         });
 
-        jButton2.setBackground(new java.awt.Color(51, 153, 255));
+        jButton2.setBackground(new java.awt.Color(121, 121, 121));
         jButton2.setFont(new java.awt.Font("Cambria", 1, 14)); // NOI18N
         jButton2.setForeground(new java.awt.Color(255, 255, 255));
         jButton2.setText("BACK");
@@ -85,7 +86,7 @@ public class addDoctor extends javax.swing.JFrame {
             }
         });
 
-        jButton3.setBackground(new java.awt.Color(255, 51, 102));
+        jButton3.setBackground(new java.awt.Color(158, 28, 28));
         jButton3.setFont(new java.awt.Font("Cambria", 1, 14)); // NOI18N
         jButton3.setForeground(new java.awt.Color(255, 255, 255));
         jButton3.setText("Logout");
@@ -104,68 +105,68 @@ public class addDoctor extends javax.swing.JFrame {
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
         layout.setHorizontalGroup(
-            layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(layout.createSequentialGroup()
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(layout.createSequentialGroup()
-                        .addGap(339, 339, 339)
-                        .addComponent(jLabel1))
-                    .addGroup(layout.createSequentialGroup()
-                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addGroup(layout.createSequentialGroup()
-                                .addGap(92, 92, 92)
+                layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                        .addGroup(layout.createSequentialGroup()
                                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                    .addComponent(jLabel2)
-                                    .addComponent(jLabel4)
-                                    .addComponent(jLabel3))
-                                .addGap(18, 18, 18))
-                            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
-                                .addContainerGap()
-                                .addComponent(jButton2)
-                                .addGap(62, 62, 62)))
-                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
-                            .addGroup(layout.createSequentialGroup()
-                                .addComponent(jButton1)
-                                .addGap(78, 78, 78)
-                                .addComponent(jButton3))
-                            .addGroup(layout.createSequentialGroup()
-                                .addGap(15, 15, 15)
-                                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
-                                    .addComponent(dn, javax.swing.GroupLayout.PREFERRED_SIZE, 198, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                    .addComponent(di, javax.swing.GroupLayout.PREFERRED_SIZE, 198, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                    .addComponent(ds, javax.swing.GroupLayout.PREFERRED_SIZE, 198, javax.swing.GroupLayout.PREFERRED_SIZE))))))
-                .addGap(18, 18, 18)
-                .addComponent(jLabel5)
-                .addContainerGap(13, Short.MAX_VALUE))
+                                        .addGroup(layout.createSequentialGroup()
+                                                .addGap(339, 339, 339)
+                                                .addComponent(jLabel1))
+                                        .addGroup(layout.createSequentialGroup()
+                                                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                                        .addGroup(layout.createSequentialGroup()
+                                                                .addGap(92, 92, 92)
+                                                                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                                                        .addComponent(jLabel2)
+                                                                        .addComponent(jLabel4)
+                                                                        .addComponent(jLabel3))
+                                                                .addGap(18, 18, 18))
+                                                        .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
+                                                                .addContainerGap()
+                                                                .addComponent(jButton2)
+                                                                .addGap(62, 62, 62)))
+                                                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
+                                                        .addGroup(layout.createSequentialGroup()
+                                                                .addComponent(jButton1)
+                                                                .addGap(78, 78, 78)
+                                                                .addComponent(jButton3))
+                                                        .addGroup(layout.createSequentialGroup()
+                                                                .addGap(15, 15, 15)
+                                                                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                                                                        .addComponent(dn, javax.swing.GroupLayout.PREFERRED_SIZE, 198, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                                                        .addComponent(di, javax.swing.GroupLayout.PREFERRED_SIZE, 198, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                                                        .addComponent(ds, javax.swing.GroupLayout.PREFERRED_SIZE, 198, javax.swing.GroupLayout.PREFERRED_SIZE))))))
+                                .addGap(18, 18, 18)
+                                .addComponent(jLabel5)
+                                .addContainerGap(13, Short.MAX_VALUE))
         );
         layout.setVerticalGroup(
-            layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(layout.createSequentialGroup()
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(layout.createSequentialGroup()
-                        .addGap(26, 26, 26)
-                        .addComponent(jLabel1)
-                        .addGap(84, 84, 84)
-                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                            .addComponent(di, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(jLabel3))
-                        .addGap(62, 62, 62)
-                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                            .addComponent(dn, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(jLabel2))
-                        .addGap(63, 63, 63)
-                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                            .addComponent(ds, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(jLabel4))
-                        .addGap(62, 62, 62)
-                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                            .addComponent(jButton1)
-                            .addComponent(jButton2)
-                            .addComponent(jButton3)))
-                    .addGroup(layout.createSequentialGroup()
-                        .addContainerGap()
-                        .addComponent(jLabel5)))
-                .addContainerGap(77, Short.MAX_VALUE))
+                layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                        .addGroup(layout.createSequentialGroup()
+                                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                        .addGroup(layout.createSequentialGroup()
+                                                .addGap(26, 26, 26)
+                                                .addComponent(jLabel1)
+                                                .addGap(84, 84, 84)
+                                                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                                                        .addComponent(di, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                                        .addComponent(jLabel3))
+                                                .addGap(62, 62, 62)
+                                                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                                                        .addComponent(dn, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                                        .addComponent(jLabel2))
+                                                .addGap(63, 63, 63)
+                                                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                                                        .addComponent(ds, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                                        .addComponent(jLabel4))
+                                                .addGap(62, 62, 62)
+                                                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                                                        .addComponent(jButton1)
+                                                        .addComponent(jButton2)
+                                                        .addComponent(jButton3)))
+                                        .addGroup(layout.createSequentialGroup()
+                                                .addContainerGap()
+                                                .addComponent(jLabel5)))
+                                .addContainerGap(77, Short.MAX_VALUE))
         );
 
         pack();
@@ -176,7 +177,7 @@ public class addDoctor extends javax.swing.JFrame {
         DOCTORS obj = new DOCTORS();
         obj.setVisible(true);
         dispose();
-       
+
     }//GEN-LAST:event_jButton2ActionPerformed
 
     private void jButton3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton3ActionPerformed
@@ -184,35 +185,35 @@ public class addDoctor extends javax.swing.JFrame {
         LoginPage obj = new LoginPage();
         obj.setVisible(true);
         dispose();
-                
+
 
     }//GEN-LAST:event_jButton3ActionPerformed
 
     private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
 
-        // agr feilds ka data fill na hoo 
+        // agr feilds ka data fill na hoo
         if (di.getText().trim().isEmpty() || dn.getText().trim().isEmpty() || ds.getText().trim().isEmpty()) {
-        JOptionPane.showMessageDialog(null, "Fill The Data First");
+            JOptionPane.showMessageDialog(null, "Fill The Data First");
         }
-         else{
-        try{ Class.forName("com.mysql.cj.jdbc.Driver");
-        Connection conn=DriverManager.getConnection("jdbc:mysql://localhost:3306/hms","root","zahid");
-        // data insert query from feilds to my sql and after that success popup
-        String sql = "insert into doctor_record values (?,?,?)";
-        PreparedStatement ptstmt = conn.prepareStatement(sql);
-        ptstmt.setString(1, di.getText());
-        ptstmt.setString(2, dn.getText());
-        ptstmt.setString(3, ds.getText());
-        ptstmt.executeUpdate();
-        JOptionPane.showMessageDialog(null, "data inserted successfully");
-       conn.close();
-        
-        // after successfull method feild will again empty
-        di.setText("");dn.setText("");ds.setText("");
-        }catch (Exception e){
-            JOptionPane.showMessageDialog(null, e);
-        } 
-         }   
+        else{
+            try{ Class.forName("com.mysql.cj.jdbc.Driver");
+                Connection conn=DriverManager.getConnection("jdbc:mysql://localhost:3306/hms","root","abc3112@");
+                // data insert query from feilds to my sql and after that success popup
+                String sql = "insert into doctor_record values (?,?,?)";
+                PreparedStatement ptstmt = conn.prepareStatement(sql);
+                ptstmt.setString(1, di.getText());
+                ptstmt.setString(2, dn.getText());
+                ptstmt.setString(3, ds.getText());
+                ptstmt.executeUpdate();
+                JOptionPane.showMessageDialog(null, "Doctor added successfully");
+                conn.close();
+
+                // after successfull method feild will again empty
+                di.setText("");dn.setText("");ds.setText("");
+            }catch (Exception e){
+                JOptionPane.showMessageDialog(null, e);
+            }
+        }
     }//GEN-LAST:event_jButton1ActionPerformed
 
     public static void main(String args[]) {

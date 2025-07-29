@@ -14,7 +14,7 @@ public class editPatient extends javax.swing.JFrame {
     public editPatient() {
         initComponents();
 
-        this.getContentPane().setBackground(new Color(0, 153, 153));
+        this.getContentPane().setBackground(new Color(90, 90, 90));
         // Center the frame 
         this.setLocationRelativeTo(null);
         // do not resize 
@@ -58,6 +58,7 @@ public class editPatient extends javax.swing.JFrame {
 
         jLabel1.setFont(new java.awt.Font("Times New Roman", 1, 24)); // NOI18N
         jLabel1.setText("EDIT PATIENT RECORD");
+        jLabel1.setForeground(new java.awt.Color(255, 255, 255));
 
         jLabel2.setFont(new java.awt.Font("Cambria", 1, 14)); // NOI18N
         jLabel2.setForeground(new java.awt.Color(255, 255, 255));
@@ -71,7 +72,7 @@ public class editPatient extends javax.swing.JFrame {
         jLabel4.setForeground(new java.awt.Color(255, 255, 255));
         jLabel4.setText("Patient Disease");
 
-        update.setBackground(new java.awt.Color(0, 102, 102));
+        update.setBackground(new java.awt.Color(54, 54, 54));
         update.setFont(new java.awt.Font("Cambria", 1, 14)); // NOI18N
         update.setForeground(new java.awt.Color(255, 255, 255));
         update.setText("UPDATE");
@@ -81,7 +82,7 @@ public class editPatient extends javax.swing.JFrame {
             }
         });
 
-        Back.setBackground(new java.awt.Color(51, 153, 255));
+        Back.setBackground(new java.awt.Color(121, 121, 121));
         Back.setFont(new java.awt.Font("Cambria", 1, 14)); // NOI18N
         Back.setForeground(new java.awt.Color(255, 255, 255));
         Back.setText("BACK");
@@ -91,7 +92,7 @@ public class editPatient extends javax.swing.JFrame {
             }
         });
 
-        logout.setBackground(new java.awt.Color(255, 51, 51));
+        logout.setBackground(new java.awt.Color(158, 28, 28));
         logout.setFont(new java.awt.Font("Cambria", 1, 14)); // NOI18N
         logout.setForeground(new java.awt.Color(255, 255, 255));
         logout.setText("LOGOUT");
@@ -103,7 +104,7 @@ public class editPatient extends javax.swing.JFrame {
 
         jLabel5.setIcon(new javax.swing.ImageIcon(getClass().getResource("/icons/patient5-removebg-preview.png"))); // NOI18N
 
-        search.setBackground(new java.awt.Color(51, 51, 255));
+        search.setBackground(new java.awt.Color(54, 54, 54));
         search.setFont(new java.awt.Font("Cambria", 1, 14)); // NOI18N
         search.setForeground(new java.awt.Color(255, 255, 255));
         search.setText("Search");
@@ -182,27 +183,42 @@ public class editPatient extends javax.swing.JFrame {
         pack();
     }// </editor-fold>//GEN-END:initComponents
 
-    private void updateActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_updateActionPerformed
-        // TODO add your handling code here:
-
+    private void updateActionPerformed(java.awt.event.ActionEvent evt) {
         String pid = pi.getText();
         String pname = pn.getText();
         String pdis = pd.getText();
-        try {
-            Class.forName("com.mysql.cj.jdbc.Driver");
-            Connection conn = DriverManager.getConnection("jdbc:mysql://localhost:3306/hms", "root", "zahid");
 
-            String sql = "update `patient_record` SET `Name`='" + pname + "',`Disease`='" + pdis + "'WHERE id='" + pid + "'";
-            PreparedStatement ptstmt = conn.prepareStatement(sql);
-            ptstmt.execute();
-
-            JOptionPane.showMessageDialog(null, "Record updated successfully");
-
-        } catch (Exception e) {
-            JOptionPane.showMessageDialog(null, e);
+        if (pid.isEmpty() || pname.isEmpty() || pdis.isEmpty()) {
+            JOptionPane.showMessageDialog(null, "Please fill in all fields.");
+            return;
         }
 
-    }//GEN-LAST:event_updateActionPerformed
+        int confirm = JOptionPane.showConfirmDialog(
+                null,
+                "Are you sure you want to update the patient's record?",
+                "Confirmation",
+                JOptionPane.YES_NO_OPTION
+        );
+
+        if (confirm == JOptionPane.YES_OPTION) {
+            try {
+                Class.forName("com.mysql.cj.jdbc.Driver");
+                Connection conn = DriverManager.getConnection("jdbc:mysql://localhost:3306/hms", "root", "abc3112@");
+
+                String sql = "UPDATE `patient_record` SET `Name` = ?, `Disease` = ? WHERE `id` = ?";
+                PreparedStatement ptstmt = conn.prepareStatement(sql);
+                ptstmt.setString(1, pname);
+                ptstmt.setString(2, pdis);
+                ptstmt.setString(3, pid);
+                ptstmt.executeUpdate();
+
+                JOptionPane.showMessageDialog(null, "Record updated successfully.");
+                conn.close();
+            } catch (Exception e) {
+                JOptionPane.showMessageDialog(null, "Error updating record: " + e.getMessage());
+            }
+        }
+    }
 
     private void BackActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_BackActionPerformed
         // TODO add your handling code here:
@@ -226,7 +242,7 @@ public class editPatient extends javax.swing.JFrame {
         String pid = pi.getText();
         try {
             Class.forName("com.mysql.cj.jdbc.Driver");
-            try (Connection conn = DriverManager.getConnection("jdbc:mysql://localhost:3306/hms", "root", "zahid")) {
+            try (Connection conn = DriverManager.getConnection("jdbc:mysql://localhost:3306/hms", "root", "abc3112@")) {
                 String sql = "SELECT `Name`, `Disease` FROM `patient_record` WHERE `id`=?";
                 PreparedStatement ptstmt = conn.prepareStatement(sql);
                 // what ever get the id put it on the first 

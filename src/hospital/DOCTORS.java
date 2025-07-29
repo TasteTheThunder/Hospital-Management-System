@@ -8,7 +8,7 @@ public class DOCTORS extends javax.swing.JFrame {
 
     public DOCTORS() {
         initComponents();
-        this.getContentPane().setBackground(new Color(0, 153, 153));
+        this.getContentPane().setBackground(new Color(90, 90, 90));
         // Center the frame 
         this.setLocationRelativeTo(null);
         // do not resize 
@@ -16,12 +16,12 @@ public class DOCTORS extends javax.swing.JFrame {
 
         heading.setHorizontalAlignment(SwingConstants.CENTER);
         heading.setText("<html>"
-                + "         Welcome to the <b>Zara Clinic</b>"
+                + "         Welcome to the <b>Ramaiah Hospital</b>"
                 + "</html>");
 
         doctdescp.setHorizontalAlignment(SwingConstants.RIGHT);
         doctdescp.setText("<html>"
-                + "Our hospital is home to some of the most talented doctors in Pakistan. With highly skilled professionals"
+                + "Our hospital is home to some of the most talented doctors in India. With highly skilled professionals"
                 + " from various fields, including cardiology, pediatrics, and general surgery, our team is recognized as among the "
                 + "best in the country. These top-ranked doctors are dedicated to providing exceptional patient care and innovative treatments, "
                 + "continually advancing medical practices and achieving outstanding patient outcomes.<br>"
@@ -56,60 +56,66 @@ public class DOCTORS extends javax.swing.JFrame {
         jLabel1.setForeground(new java.awt.Color(255, 255, 255));
         jLabel1.setText("DOCTORS RECORDS");
 
-        jButton1.setBackground(new java.awt.Color(0, 255, 153));
+        jButton1.setBackground(new java.awt.Color(54, 54, 54));
         jButton1.setFont(new java.awt.Font("Cambria", 1, 14)); // NOI18N
-        jButton1.setForeground(new java.awt.Color(0, 0, 0));
+        jButton1.setForeground(new java.awt.Color(255, 255, 255));
         jButton1.setText("ADD DOCTORS");
+        jButton1.setFocusable(false);
         jButton1.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jButton1ActionPerformed(evt);
             }
         });
 
-        jButton2.setBackground(new java.awt.Color(51, 255, 153));
+        jButton2.setBackground(new java.awt.Color(54, 54, 54));
         jButton2.setFont(new java.awt.Font("Cambria", 1, 14)); // NOI18N
-        jButton2.setForeground(new java.awt.Color(0, 0, 0));
+        jButton2.setForeground(new java.awt.Color(255, 255, 255));
         jButton2.setText("EDIT DOCTORS DETAIL");
+        jButton2.setFocusable(false);
         jButton2.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jButton2ActionPerformed(evt);
             }
         });
 
-        jButton3.setBackground(new java.awt.Color(51, 255, 153));
+        jButton3.setBackground(new java.awt.Color(54, 54, 54));
         jButton3.setFont(new java.awt.Font("Cambria", 1, 14)); // NOI18N
-        jButton3.setForeground(new java.awt.Color(0, 0, 0));
+        jButton3.setForeground(new java.awt.Color(255, 255, 255));
         jButton3.setText("FIRE DOCTOR");
+        jButton3.setFocusable(false);
         jButton3.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jButton3ActionPerformed(evt);
             }
         });
 
-        jButton4.setBackground(new java.awt.Color(0, 255, 153));
+        jButton4.setBackground(new java.awt.Color(54, 54, 54));
         jButton4.setFont(new java.awt.Font("Cambria", 1, 14)); // NOI18N
-        jButton4.setForeground(new java.awt.Color(0, 0, 0));
+        jButton4.setForeground(new java.awt.Color(255, 255, 255));
         jButton4.setText("VIEW DOCTORS DETAIL");
+        jButton4.setFocusable(false);
         jButton4.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jButton4ActionPerformed(evt);
             }
         });
 
-        jButton5.setBackground(new java.awt.Color(51, 153, 255));
+        jButton5.setBackground(new java.awt.Color(121, 121, 121));
         jButton5.setFont(new java.awt.Font("Cambria", 1, 14)); // NOI18N
         jButton5.setForeground(new java.awt.Color(255, 255, 255));
         jButton5.setText("BACK");
+        jButton5.setFocusable(false);
         jButton5.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jButton5ActionPerformed(evt);
             }
         });
 
-        jButton6.setBackground(new java.awt.Color(255, 51, 51));
+        jButton6.setBackground(new java.awt.Color(158, 28, 28));
         jButton6.setFont(new java.awt.Font("Cambria", 1, 14)); // NOI18N
         jButton6.setForeground(new java.awt.Color(255, 255, 255));
         jButton6.setText("LOGOUT");
+        jButton6.setFocusable(false);
         jButton6.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jButton6ActionPerformed(evt);

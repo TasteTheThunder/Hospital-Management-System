@@ -9,27 +9,27 @@ public class welcome extends javax.swing.JFrame {
     public welcome() {
         initComponents();
          this.getContentPane().setBackground(new Color(0, 153, 153));
-       // Center the frame 
+       // Center the frame
         this.setLocationRelativeTo(null);
-        // do not resize 
+        // do not resize
         this.setResizable(false);
 
         heading.setHorizontalAlignment(SwingConstants.LEFT);
         heading.setText("<html>"
-    + "         Welcome to the <b>Zara Clinic</b>"
+    + "         Welcome to the <b>Ramaiah Hospital</b>"
     + "</html>");
-        
+
         welCenterText.setHorizontalAlignment(SwingConstants.RIGHT);
-        
+
        welCenterText.setText("<html>"
     + "This system is designed to manage hospital operations efficiently."
     + "It provides functionalities for <b>patients</b> and <b>doctors</b> where you can add, delete, update, and read data.<br>"
     + "</html>");
-       
+
        jButton1.setCursor(new Cursor(Cursor.HAND_CURSOR));
        jButton2.setCursor(new Cursor(Cursor.HAND_CURSOR));
        jButton3.setCursor(new Cursor(Cursor.HAND_CURSOR));
-       
+
 
     }
 
@@ -51,36 +51,39 @@ public class welcome extends javax.swing.JFrame {
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
-        jPanel1.setBackground(new java.awt.Color(0, 153, 153));
+        jPanel1.setBackground(new java.awt.Color(90, 90, 90));
 
         jLabel1.setBackground(new java.awt.Color(0, 0, 0));
         jLabel1.setFont(new java.awt.Font("PMingLiU-ExtB", 1, 48)); // NOI18N
         jLabel1.setForeground(new java.awt.Color(255, 255, 255));
-        jLabel1.setText("Zara Clinic");
+        jLabel1.setText("Ramaiah Hospital");
 
-        jButton1.setBackground(new java.awt.Color(0, 204, 153));
+        jButton1.setBackground(new java.awt.Color(54, 54, 54));
         jButton1.setFont(new java.awt.Font("Cambria", 1, 14)); // NOI18N
         jButton1.setForeground(new java.awt.Color(255, 255, 255));
         jButton1.setText("Doctor's Record");
+        jButton1.setFocusable(false);
         jButton1.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jButton1ActionPerformed(evt);
             }
         });
 
-        jButton2.setBackground(new java.awt.Color(0, 204, 153));
+        jButton2.setBackground(new java.awt.Color(54, 54, 54));
         jButton2.setFont(new java.awt.Font("Cambria", 1, 14)); // NOI18N
         jButton2.setForeground(new java.awt.Color(255, 255, 255));
         jButton2.setText("Patient's Record");
+        jButton2.setFocusable(false);
         jButton2.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jButton2ActionPerformed(evt);
             }
         });
 
-        jButton3.setBackground(new java.awt.Color(255, 0, 51));
+        jButton3.setBackground(new java.awt.Color(146, 28, 28));
         jButton3.setForeground(new java.awt.Color(255, 255, 255));
         jButton3.setText("LOGOUT");
+        jButton3.setFocusable(false);
         jButton3.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jButton3ActionPerformed(evt);
@@ -185,17 +188,17 @@ public class welcome extends javax.swing.JFrame {
 
     private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
         // TODO add your handling code here:
-        
+
         DOCTORS obj= new DOCTORS();
         obj.setVisible(true);
-        //free up the space of the memory on the window 
+        //free up the space of the memory on the window
         dispose();
 
     }//GEN-LAST:event_jButton1ActionPerformed
 
     private void jButton2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton2ActionPerformed
         // TODO add your handling code here:
-        
+
         PATIENT obj= new PATIENT();
         obj.setVisible(true);
         dispose();
