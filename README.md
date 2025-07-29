@@ -49,14 +49,14 @@
 ## Screenshots
 
 ### Login Page
-![Login](Screenshots/Login.png)
+![Login](Screenshots/login.PNG)
 
 ### Welcome Page
-![Welcome](Screenshots/Welcome.png)
+![Welcome](Screenshots/welcome.PNG)
 
 ## Patient Management
 ### Patient Main Page
-![Patient Main](Screenshots/Patient.png)
+![Patient Main](Screenshots/patient.PNG)
 
 ### Admit Patient
 ![Admit Patient](Screenshots/AdmitPatient.png)
@@ -72,7 +72,7 @@
 
 ## Doctor Management
 ### Doctor Main Page
-![Doctor Main](Screenshots/Doctor.png)
+![Doctor Main](Screenshots/doctor.PNG)
 
 ### Add Doctor
 ![Add Doctor](Screenshots/AddDoctor.png)
