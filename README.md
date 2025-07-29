@@ -1,4 +1,4 @@
-# Zara Clinic - Hospital Management System
+# Ramaiah Hospital- Hospital Management System
 
 ## Overview
 
