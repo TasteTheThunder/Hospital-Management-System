@@ -14,10 +14,12 @@
 
 ## Technologies Used
 
-- **Java Swing:** User interface development.
-- **MySQL:** Database management.
-- **MySQL Workbench:** Database design and administration.
-- **NetBeans/VS Code:** Recommended IDEs for development.
+Technologies Used
+- **Java Swing:** For building the graphical user interface.
+- **JDBC (Java Database Connectivity):** For connecting and interacting with the MySQL database.
+- **MySQL:** Backend database for storing patient and doctor records.
+- **IntelliJ IDEA:** Primary IDE used for development and debugging.
+- **Visual Studio Code:** Alternate lightweight IDE for code editing and project management.
 
 ## Installation
 
@@ -27,7 +29,7 @@
    ```
 
 2. **Setup MySQL Database:**
-   - Import the provided SQL schema (`schema.sql`) into MySQL Workbench.
+   - Import the provided SQL schema (`hms.sql`) into MySQL Workbench.
    - Create the required tables: `doctor_record`, `patient_record`, and `users`.
    - Update database connection details in the Java source files (e.g., `LoginPage.java`).
 
@@ -101,7 +103,9 @@ Hospital-Management-System/
 │   ├── patient.PNG
 │   └── doctor.PNG
 ├── README.md
-└── schema.sql
+└── Database/
+    └──hms.sql
+
 ```
 
 ## License
