@@ -49,7 +49,7 @@
 ## Screenshots
 
 ### Login Page
-![Login](Screenshots/Login.png)
+![Login](Screenshots/Login.PNG)
 
 ### Welcome Page
 ![Welcome](Screenshots/welcome.PNG)
