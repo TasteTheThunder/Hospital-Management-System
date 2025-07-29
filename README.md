@@ -14,7 +14,6 @@
 
 ## Technologies Used
 
-Technologies Used
 - **Java Swing:** For building the graphical user interface.
 - **JDBC (Java Database Connectivity):** For connecting and interacting with the MySQL database.
 - **MySQL:** Backend database for storing patient and doctor records.
